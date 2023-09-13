@@ -59,8 +59,13 @@ try:
 except:
     print("File cannot be open: ", fname)
     quit()
+    #Skipping with continue
+xfile = open("texto.txt")
 for line in xfile:
     line = line.rstrip()  
-    if not "De" in line: # aqui
-        continue                 
+    if not line.startswith("C"): # aqui
+        continue                  # aqui
     print(line)
+print("\n***************************")
+
+
